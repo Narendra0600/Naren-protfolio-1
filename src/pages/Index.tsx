@@ -8,12 +8,14 @@ import Services from "@/components/portfolio/Services";
 import WhyChooseMe from "@/components/portfolio/WhyChooseMe";
 import Contact from "@/components/portfolio/Contact";
 import Footer from "@/components/portfolio/Footer";
+import CustomCursor from "@/components/CustomCursor";
 
 const Index = () => {
   useScrollReveal();
 
   return (
     <>
+      <CustomCursor />
       <Navbar />
       <Hero />
       <About />

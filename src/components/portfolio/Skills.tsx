@@ -1,12 +1,14 @@
+import React from "react";
 import { Film, Clapperboard, Palette, BookOpen, Volume2, Layers } from "lucide-react";
+import { motion } from "framer-motion";
 
 const skills = [
-  { icon: Film, name: "Video Editing", desc: "Cutting, trimming, and assembling footage into polished content" },
-  { icon: Clapperboard, name: "Cinematic Editing", desc: "Film-style pacing with dramatic transitions and effects" },
-  { icon: Palette, name: "Color Grading", desc: "Professional color correction and cinematic LUTs" },
-  { icon: BookOpen, name: "Storytelling", desc: "Narrative-driven editing that keeps viewers engaged" },
-  { icon: Volume2, name: "Sound Design", desc: "Audio mixing, SFX layering, and music synchronization" },
-  { icon: Layers, name: "Smooth Transitions", desc: "Seamless cuts, zooms, and motion-matched transitions" },
+  { icon: Film, name: "Video Editing", desc: "Cutting, trimming, and assembling footage into polished content", progress: 95 },
+  { icon: Clapperboard, name: "Cinematic Editing", desc: "Film-style pacing with dramatic transitions and effects", progress: 90 },
+  { icon: Palette, name: "Color Grading", desc: "Professional color correction and cinematic LUTs", progress: 85 },
+  { icon: BookOpen, name: "Storytelling", desc: "Narrative-driven editing that keeps viewers engaged", progress: 92 },
+  { icon: Volume2, name: "Sound Design", desc: "Audio mixing, SFX layering, and music synchronization", progress: 88 },
+  { icon: Layers, name: "Smooth Transitions", desc: "Seamless cuts, zooms, and motion-matched transitions", progress: 96 },
 ];
 
 const Skills = () => {
@@ -23,7 +25,17 @@ const Skills = () => {
             >
               <skill.icon className="w-8 h-8 text-primary mb-4" />
               <h3 className="font-display text-xl tracking-wide mb-2">{skill.name}</h3>
-              <p className="text-sm text-muted-foreground">{skill.desc}</p>
+              <p className="text-sm text-muted-foreground mb-4">{skill.desc}</p>
+              
+              <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
+                <motion.div 
+                  initial={{ width: 0 }}
+                  whileInView={{ width: `${skill.progress}%` }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 1, delay: 0.2 + (i * 0.1), ease: "easeOut" }}
+                  className="h-full bg-primary" 
+                />
+              </div>
             </div>
           ))}
         </div>

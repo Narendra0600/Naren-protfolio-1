@@ -1,3 +1,5 @@
+import React from "react";
+
 const stats = [
   { label: "2+ Years Learning" },
   { label: "DaVinci Resolve" },
@@ -10,7 +12,16 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center fade-up">
-            <div className="w-56 h-56 md:w-72 md:h-72 rounded-full border-4 border-primary gradient-placeholder" />
+            <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full border-4 border-primary p-2 group">
+              <div className="absolute -inset-2 rounded-full border-4 border-primary/50 animate-[spin_10s_linear_infinite] border-t-transparent pointer-events-none" />
+              <div className="w-full h-full rounded-full overflow-hidden bg-muted">
+                <img
+                  src="https://lh3.googleusercontent.com/d/1m2T8_vyXXxELBE4m1mHCKr-nFFxV-nBP=s1000"
+                  alt="Narendra Naidu"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            </div>
           </div>
           <div className="fade-up" style={{ transitionDelay: "0.15s" }}>
             <h2 className="section-heading mb-6">About Me</h2>
