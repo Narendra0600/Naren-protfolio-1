@@ -1,73 +1,38 @@
-# Welcome to your Lovable project
+# Naren - Cinematic Showcase Portfolio
 
-## Project info
+Welcome to the **Cinematic Showcase Portfolio** for Naren! This is a modern, responsive, and visually stunning web application designed to highlight video editing, cinematography, and creative projects. 
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🌐 Live Preview
+*(Add your live deployment link here once published)*
 
-## How can I edit this code?
+## ✨ Key Features & Sections
 
-There are several ways of editing your application.
+The website is designed with a sleek cinematic theme (dark aesthetics, glassmorphism, and smooth animations) and includes the following sections:
 
-**Use Lovable**
+- **Hero Section:** A powerful introduction with a dynamic background and direct call-to-action to view the portfolio.
+- **About Me:** A professional biography highlighting skills, experience, and the creative journey.
+- **Skills:** A visual showcase of technical proficiencies (e.g., Premiere Pro, After Effects, DaVinci Resolve) with progress bars/indicators.
+- **Portfolio / Projects:** A grid-style gallery displaying video projects. Each project features a thumbnail, title, and description, with hover effects for a cinematic feel.
+- **Services:** A breakdown of the creative services offered (e.g., Music Videos, Commercials, Color Grading) presented in sleek cards.
+- **Why Choose Me:** A highlights section focusing on unique selling points like quick delivery, cinematic quality, and storytelling focus.
+- **Contact:** A clean, functional contact form with direct links to Instagram and Email for easy communication.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+This project is built using modern web development tools to ensure high performance and a premium user experience:
 
-**Use your preferred IDE**
+- **React.js** (Frontend library)
+- **TypeScript** (For type-safe code)
+- **Vite** (Next-generation frontend tooling for fast builds)
+- **Tailwind CSS** (For utility-first, responsive, and customizable styling)
+- **shadcn-ui** (For beautifully designed, accessible UI components)
+- **Lucide React** (For crisp, modern SVG icons)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎨 Design System
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Theme:** Dark mode by default, emphasizing a cinematic and premium feel.
+- **Interactions:** Smooth scroll reveals (`useScrollReveal` hook) and micro-animations on cards and buttons.
+- **Layout:** Fully responsive, ensuring a perfect layout across desktop, tablet, and mobile devices.
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+*Designed & Built for Naren*

@@ -1,12 +1,12 @@
+import React, { useState } from "react";
 import { Mail, Instagram } from "lucide-react";
-import { useState } from "react";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const mailtoLink = `mailto:your@email.com?subject=Project Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+  const mailtoLink = `mailto:nareenedits@gmail.com?subject=Project Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
 
   return (
     <section id="contact" className="py-24 md:py-32">
@@ -57,7 +57,7 @@ const Contact = () => {
         </form>
 
         <div className="flex justify-center gap-6 mt-8 fade-up" style={{ transitionDelay: "0.3s" }}>
-          <a href="mailto:your@email.com" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="mailto:nareenedits@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
             <Mail className="w-6 h-6" />
           </a>
           <a href="https://instagram.com/editzz.view" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
