@@ -57,10 +57,19 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  @media (max-width: 767px) {
+    section {
+      padding: 60px 16px !important;
+    }
   }
 }
 

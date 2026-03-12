@@ -31,9 +31,10 @@ const Skills = () => {
                 <motion.div 
                   initial={{ width: 0 }}
                   whileInView={{ width: `${skill.progress}%` }}
-                  viewport={{ once: true, margin: "-50px" }}
+                  viewport={{ once: true, margin: "0px 0px -50px 0px", amount: 0.1 }}
                   transition={{ duration: 1, delay: 0.2 + (i * 0.1), ease: "easeOut" }}
-                  className="h-full bg-primary" 
+                  className="h-full bg-primary"
+                  style={{ willChange: "width", transform: "translateZ(0)" }}
                 />
               </div>
             </div>

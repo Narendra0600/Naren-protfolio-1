@@ -26,7 +26,7 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
+        <button className="md:hidden text-foreground min-h-[44px] min-w-[44px] flex items-center justify-center" onClick={() => setOpen(!open)}>
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
               key={l.label}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[44px]"
             >
               {l.label}
             </a>

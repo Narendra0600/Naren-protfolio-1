@@ -16,9 +16,13 @@ const About = () => {
               <div className="absolute -inset-2 rounded-full border-4 border-primary/50 animate-[spin_10s_linear_infinite] border-t-transparent pointer-events-none" />
               <div className="w-full h-full rounded-full overflow-hidden bg-muted">
                 <img
-                  src="https://lh3.googleusercontent.com/d/1m2T8_vyXXxELBE4m1mHCKr-nFFxV-nBP=s1000"
+                  src="./profile.jpg"
                   alt="Narendra Naidu"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  width={288}
+                  height={288}
+                  loading="eager"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 bg-muted"
+                  style={{ maxWidth: "100%", height: "auto" }}
                 />
               </div>
             </div>
