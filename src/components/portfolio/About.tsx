@@ -1,4 +1,5 @@
 import React from "react";
+import profileImg from "@/assets/profile.jpg";
 
 const stats = [
   { label: "2+ Years Learning" },
@@ -16,7 +17,7 @@ const About = () => {
               <div className="absolute -inset-2 rounded-full border-4 border-primary/50 animate-[spin_10s_linear_infinite] border-t-transparent pointer-events-none" />
               <div className="w-full h-full rounded-full overflow-hidden bg-muted">
                 <img
-                  src="./profile.jpg"
+                  src={profileImg}
                   alt="Narendra Naidu"
                   width={288}
                   height={288}

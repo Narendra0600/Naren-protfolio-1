@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import { Play } from "lucide-react";
+import thumb1 from "@/assets/thumbnails/thumb1.png";
+import thumb2 from "@/assets/thumbnails/thumb2.jpg";
+import thumb5 from "@/assets/thumbnails/thumb5.jpg";
+import thumb6 from "@/assets/thumbnails/thumb6.jpg";
+import thumb7 from "@/assets/thumbnails/thumb7.jpg";
 
 const categories = ["All", "Reels", "Cinematic", "YouTube", "Color Grade"];
 
 const projects = [
-  { id: 1, category: "YouTube", title: "YouTube Vlog Edit #1", desc: "Dynamic vlog edit with engaging pacing", url: "https://drive.google.com/drive/folders/1MySp10JAApTyne-N8pI6_o7Kojm5fi8_?usp=drive_link", image: "./thumbnails/thumb1.png" },
-  { id: 2, category: "YouTube", title: "Tech Review Edit", desc: "Clean cuts with motion graphics overlay", url: "https://drive.google.com/drive/folders/1LKgbfMp0mL2D9im9eWE9J3kNAwesuNot?usp=drive_link", image: "./thumbnails/thumb2.jpg" },
-  { id: 3, category: "Reels", title: "Trending Reel Edit", desc: "Fast-paced edit synced to trending audio", url: "https://drive.google.com/drive/folders/1p8pdzRWH9R7VrehYnIRxZlYVuskvJvtt?usp=drive_link", image: "./thumbnails/thumb6.jpg" },
-  { id: 4, category: "Reels", title: "Product Showcase", desc: "Smooth transitions for product reveal", url: "https://drive.google.com/drive/folders/1_0vahg26KzC1h3eDZm5-muV-lZ48WHTz?usp=drive_link", image: "./thumbnails/thumb7.jpg" },
-  { id: 5, category: "Cinematic", title: "Short Film Edit", desc: "Dramatic pacing with cinematic color", url: "https://drive.google.com/drive/folders/1X3P7Z5lKJPsrbgN-nzuS3mPKqWoxBLMJ?usp=drive_link", image: "./thumbnails/thumb5.jpg" },
+  { id: 1, category: "YouTube", title: "YouTube Vlog Edit #1", desc: "Dynamic vlog edit with engaging pacing", url: "https://drive.google.com/drive/folders/1MySp10JAApTyne-N8pI6_o7Kojm5fi8_?usp=drive_link", image: thumb1 },
+  { id: 2, category: "YouTube", title: "Tech Review Edit", desc: "Clean cuts with motion graphics overlay", url: "https://drive.google.com/drive/folders/1LKgbfMp0mL2D9im9eWE9J3kNAwesuNot?usp=drive_link", image: thumb2 },
+  { id: 3, category: "Reels", title: "Trending Reel Edit", desc: "Fast-paced edit synced to trending audio", url: "https://drive.google.com/drive/folders/1p8pdzRWH9R7VrehYnIRxZlYVuskvJvtt?usp=drive_link", image: thumb6 },
+  { id: 4, category: "Reels", title: "Product Showcase", desc: "Smooth transitions for product reveal", url: "https://drive.google.com/drive/folders/1_0vahg26KzC1h3eDZm5-muV-lZ48WHTz?usp=drive_link", image: thumb7 },
+  { id: 5, category: "Cinematic", title: "Short Film Edit", desc: "Dramatic pacing with cinematic color", url: "https://drive.google.com/drive/folders/1X3P7Z5lKJPsrbgN-nzuS3mPKqWoxBLMJ?usp=drive_link", image: thumb5 },
 ];
 
 const Portfolio = () => {
